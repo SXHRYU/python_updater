@@ -60,7 +60,7 @@ latest_python_version = formatting(latest_python_version_raw)
 current_python_version = get_current_version()
 
 if current_vs_latest(current_python_version, latest_python_version):
-    print('You are up-to-date: {current_python_version}.')
+    print(f'You are up-to-date: {current_python_version}.')
 else:
     print(f'Latest Release: {latest_python_version}.\nYour version is: {current_python_version}.')
     print(f'Downloading {latest_python_version}...')
