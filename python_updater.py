@@ -53,7 +53,7 @@ def download_latest(latest_python_version):
     # with open(filename, 'wb') as f:
     #     f.write(d.content)
 
-
+print("Connecting to 'https://www.python.org/downloads/windows/'")
 r = requests.get('https://www.python.org/downloads/windows/')
 latest_python_version_raw = get_latest_version(r)
 latest_python_version = formatting(latest_python_version_raw)
